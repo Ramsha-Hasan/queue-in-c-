@@ -42,11 +42,11 @@ namespace whatever
 
             Console.WriteLine("");
 
-            customer b = queueOfCustomers.Peek();
+            customer b = queueOfCustomers.Peek();   // return the desired stuff without removing any member
             Console.WriteLine("{0} - {1}",b.ID,b.name);
 
             Console.WriteLine("");
-            customer c1 = queueOfCustomers.Dequeue(); //remove the first member 
+            customer c1 = queueOfCustomers.Dequeue(); //remove the first member and return the desired stuff
             foreach (customer a in queueOfCustomers)
             {
                 Console.WriteLine("{0} - {1}", a.ID, a.name);
